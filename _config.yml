@@ -1,13 +1,13 @@
 # Site
-name: 'Pintereso'
-description: 'Pintereso is a free Jekyll theme for awesome people like you, Pinterest like.'
+name: 'M laptops'
+description: 'Get Laptop of your choice.'
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+favicon: 'assets/images/sal.png'
 url: 'https://www.kunanamna.com'
 baseurl: 
 avatar: 'assets/images/sal.jpg'
 disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
+email: ''
 
 include: ["_pages"]
 permalink: /:title/
