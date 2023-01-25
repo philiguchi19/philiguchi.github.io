@@ -34,20 +34,24 @@ layout: default
                     
     				{{ content }}
                     
-                    {% if page.visit %}
+                   {% comment %}
+                   {% if page.visit %}
+                   {% endcomment %} 
                     <p><a target="_blank" href="{{page.visit}}" class="btn btn-gray d-block font-weight-bold">
                        Order <i class="fab fa-whatsapp"></i></a>
                     </p>
+                    {% comment %}
                     {% endif %}
+                    {% endcomment %}
                     
                     {% for category in page.categories %}
                       <a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
                         # {{ category | downcase }}
                       </a>
                     {% endfor %}
-                  
+                  <!--
     				{% include comments.html %}
-                    
+                    -->
     			</div> 
                 <div>
                   {% if page.visit %}
