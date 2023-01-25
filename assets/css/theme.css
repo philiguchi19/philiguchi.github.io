@@ -7,10 +7,8 @@ a:hover {
 img {
 	max-width: 100%;
 }
-a,.a:hover {
-	-webkit-transition:all 0.2s;
-	transition: all 0.2s;
-}
+
+
 .container-fluid {
 	width:94%;
 	margin:0px auto;
@@ -91,11 +89,9 @@ footer.footer {
 	border: 0;
     transition:ease .1s;
 }
-.card-pin:hover .overlay {
+.card-pin .overlay {
 	opacity:.5;
 	border:5px solid #f3f3f3;
-	-webkit-transition:ease .2s;
-	transition:ease .1s;
 	background-color:#000000;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
@@ -145,9 +141,9 @@ footer.footer {
 	text-decoration:none;
 	color: #ffffff;
 }
-.card-pin.raco:hover .notraco {
+.card-pin.raco .notraco {
     background-color: #f0f0f0;
-    transition: all 0.2s;
+    
 }
 .social {
 	position:relative;
