@@ -34,17 +34,14 @@ layout: default
                     
     				{{ content }}
                     
-                   {% comment %}
+                   
                    {% if page.visit %}
-                   {% endcomment %} 
-                    <p><a target="_blank" href="{{page.visit}}" class="btn btn-gray d-block font-weight-bold">
-                       Order <i class="fab fa-whatsapp"></i></a>
-                    </p>
-                    {% comment %}
-                    {% endif %}
-                    {% endcomment %}
-                    
-                    {% for category in page.categories %}
+                   <p><a target="_blank" href="{{page.visit}}" class="btn btn-gray d-block font-weight-bold">
+                       Order This<i class="fab fa-whatsapp"></i></a>
+                   </p>
+                   {% endif %}
+                                      
+                   {% for category in page.categories %}
                       <a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
                         # {{ category | downcase }}
                       </a>
