@@ -257,6 +257,11 @@ article .card-body {
     padding-bottom: 0rem;
     padding-left: 2rem;
 }
+.homepage{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 .pinme {
     position: absolute;
     top: 6px;
