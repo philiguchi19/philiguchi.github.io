@@ -250,17 +250,6 @@ article .card-body {
     -moz-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-.Homepage{
-    padding: 0rem 2rem;
-    padding-top: 0rem;
-    padding-right: 2rem;
-    padding-bottom: 0rem;
-    padding-left: 2rem;
-}
-.homepage{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
 }
 .pinme {
     position: absolute;
