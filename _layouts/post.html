@@ -48,7 +48,14 @@ layout: default
                   
     				{% include comments.html %}
                     
-    			</div>  
+    			</div> 
+                <div>
+                  {% if page.visit %}
+                    <p><a target="_blank" href="{{page.visit}}" class="btn btn-gray d-block font-weight-bold">
+                       Order <i class="fab fa-whatsapp"></i></a>
+                    </p>
+                    {% endif %}  
+                </div>
                     
     			</article>
                 
