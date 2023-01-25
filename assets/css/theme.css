@@ -249,6 +249,13 @@ article .card-body {
     -moz-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
+.Homepage{
+    padding: 0.5rem 2rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
 .pinme {
     position: absolute;
     top: 6px;
