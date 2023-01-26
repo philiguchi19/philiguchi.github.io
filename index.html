@@ -14,13 +14,13 @@ description: "A great collection of free and premium themes and templates."
 </div>
 <div class="carousel-container">
     <h2>Featured Products</h2>
-    <div class="carousel">
-        {% for image in post.featured %}
-        <div class="carousel-item">
-            <img src="{{image}}" alt="{{post.title}} featured image">
-        </div>
-        {% endfor %}
+  <div class="carousel">
+    {% for image in post.featured %}
+    <div class="carousel-item">
+        <img src="{{ image }}" alt="{{ post.title }} featured image">
     </div>
+    {% endfor %}
+</div>
 </div>
 <div class="container-fluid">
     
