@@ -113,6 +113,10 @@ position: relative;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
 }
+.card-size{
+        height: 314px;
+	width: 206px;
+}
 /*slide css*/
 .featuredparent-container {
     overflow-x: auto;
