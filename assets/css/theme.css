@@ -121,7 +121,7 @@ position: relative;
     position: relative;
 }
 
-.fab {
+.fabi {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -130,11 +130,11 @@ position: relative;
     cursor: pointer;
 }
 
-.fab.fa-angle-left {
+.fabi.fa-angle-left {
     left: 10px;
 }
 
-.fab.fa-angle-right {
+.fabi.fa-angle-right {
     right: 10px;
 }
 
