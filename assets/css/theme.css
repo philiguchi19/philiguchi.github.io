@@ -113,6 +113,7 @@ position: relative;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
 }
+/*
 .feautedparent-container {
     overflow-x: auto;
     width: 100%;
@@ -147,7 +148,7 @@ position: relative;
     flex: 0 0 auto;
     margin-right: 20px;
 }
-
+*/
 
 .more {
 	color:white;
