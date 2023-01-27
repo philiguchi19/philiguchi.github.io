@@ -81,7 +81,7 @@ footer.footer {
 	padding: 0.5rem 2rem;
 }
 .fa-angle-right, .fa-angle-left {
-    color: blue;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -113,7 +113,7 @@ position: relative;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
 }
-/*
+/*slide css*/
 .feautedparent-container {
     overflow-x: auto;
     width: 100%;
@@ -148,8 +148,7 @@ position: relative;
     flex: 0 0 auto;
     margin-right: 20px;
 }
-*/
-
+/*slide css end here*/
 .more {
 	color:white;
 	font-size:14px;
