@@ -80,47 +80,10 @@ footer.footer {
 .navbar {
 	padding: 0.5rem 2rem;
 }
-.carousel-container {
-  position: relative;
-  overflow: hidden;
+.fa-angle-right, .fa-angle-left {
+    color: blue;
+    font-size: 1.5em;
 }
-
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-item {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  width: 100%;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-item.active {
-  animation: carousel-fade-in 1s;
-}
-
-.carousel-item.next {
-  animation: carousel-fade-out 1s;
-}
-
-@keyframes carousel-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes carousel-fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
 
 .overlay {
 	position:absolute;
