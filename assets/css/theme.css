@@ -113,6 +113,15 @@ position: relative;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
 }
+.card-columns {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.card-columns .card {
+    max-width: 100%;
+}
+
 .more {
 	color:white;
 	font-size:14px;
