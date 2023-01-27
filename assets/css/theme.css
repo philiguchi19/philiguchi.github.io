@@ -124,8 +124,7 @@ position: relative;
     height: 500px;
     position: relative;
     white-space: nowrap;
-    display: flex;
-}
+    }
 
 .fabi {
     position: absolute;
