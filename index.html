@@ -35,12 +35,14 @@ description: "A great collection of free and premium themes and templates."
 {% endfor %}
 </div>
 
-    
-    <div class="card-columns">        
+    <!--
+    <div class="card-columns"> 
+      {% comment %}
         {% for post in paginator.posts reversed %}
             {% include card-post.html %}
-        {% endfor %}            
-    
+        {% endfor %}  
+      {% endcomment %}
+    <!--
     <div class="row justify-content-center mt-5">
      {% comment %}
         {% if paginator.total_pages > 1 %}
@@ -69,7 +71,7 @@ description: "A great collection of free and premium themes and templates."
     {% endcomment %}
         </div>
        {% comment %}   {% endif %} {% endcomment %}     
-    </div>-->
+    </div>
 
 </div>    
   
