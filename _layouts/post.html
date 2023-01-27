@@ -53,18 +53,7 @@ layout: default
                                     
     			</article>
                 
-<div class="carousel-container">
-  <h2>Featured Products</h2>
-  <div class="carousel">
-    {% for image in post.featured %}
-      <div class="carousel-item">
-        <img src="{{ image }}" alt="{{ post.title }} featured image">
-      </div>
-    {% endfor %}
-  </div>
-  <button class="carousel-button-prev">Previous</button>
-  <button class="carousel-button-next">Next</button>
-</div>               
+              
                <!-- <div class="PageNavigation">
                   {% if page.next.url %}
                     <a class="prev" href="{{site.baseurl}}{{page.next.url}}"><i class="fa fa-angle-left"></i> </a>
