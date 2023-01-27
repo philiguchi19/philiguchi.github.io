@@ -123,6 +123,8 @@ position: relative;
     width: 100%;
     height: 500px;
     position: relative;
+    white-space: nowrap;
+    display: flex;
 }
 
 .fabi {
