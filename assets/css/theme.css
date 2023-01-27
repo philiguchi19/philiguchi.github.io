@@ -113,14 +113,41 @@ position: relative;
 	cursor:-webkit-zoom-in;
 	cursor: zoom-in;
 }
-.card-columns {
+.feautedparent-container {
+    overflow-x: auto;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.fab {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.fab.fa-angle-left {
+    left: 10px;
+}
+
+.fab.fa-angle-right {
+    right: 10px;
+}
+
+.featuredcard-columns {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
-.card-columns .card {
-    max-width: 100%;
+
+.featuredcard-columns .card {
+    flex: 0 0 auto;
+    margin-right: 20px;
 }
+
 
 .more {
 	color:white;
