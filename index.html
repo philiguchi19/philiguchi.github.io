@@ -16,7 +16,7 @@ description: "A great collection of free and premium themes and templates."
 <div class="container-fluid">
   
   <!-- featured section -->
-  <div class="feautedparent-container" style="overflow-x: auto; width: 100%; height: 500px;">
+  <div class="featuredparent-container" style="overflow-x: auto; width: 100%; height: 500px;">
 {% for category in site.categories %}
     {% if category[0] == "featured" %}
         <h3 class="mt-4 display-4" id="{{ category[0] | downcase }}"><small class="text-muted">#</small> {{ category[0] }}</h3><hr>
