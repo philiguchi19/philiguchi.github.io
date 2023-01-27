@@ -12,7 +12,7 @@ description: "A great collection of free and premium themes and templates."
     <img src="assets/images/homepage.png" class="img-fluid object-fit-cover" alt="Micro Laptops" >
   </a>
 </div>
-
+</div>
 <div class="container-fluid">
   
   <!-- featured section -->
@@ -34,15 +34,16 @@ description: "A great collection of free and premium themes and templates."
         {% endif %}
 {% endfor %}
 </div>
-    <div class="card-columns"> 
-      
+
+    <!--hide CardColumns>
+    <div class="card-columns">        
         {% for post in paginator.posts reversed %}
             {% include card-post.html %}
-        {% endfor %}  
-     
-   
+        {% endfor %}            
+    </div>
     <div class="row justify-content-center mt-5">
-            {% if paginator.total_pages > 1 %}
+     <!-- Pagination links -->
+        {% if paginator.total_pages > 1 %}
         <div class="pagination"> 
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
@@ -65,14 +66,10 @@ description: "A great collection of free and premium themes and templates."
           {% else %}
             <span class="next">Next &raquo;</span>
           {% endif %}
-            </div>
-       {% comment %}   {% endif %} {% endcomment %}     
+        </div>
+        {% endif %}      
     </div>
-
-    
 
 </div>    
   
 </section>
-
-
