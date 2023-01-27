@@ -42,7 +42,7 @@ description: "A great collection of free and premium themes and templates."
         {% endfor %}            
     <!-- 
     <div class="row justify-content-center mt-5">
-     
+     {% comment %}
         {% if paginator.total_pages > 1 %}
         <div class="pagination"> 
           {% if paginator.previous_page %}
@@ -66,8 +66,9 @@ description: "A great collection of free and premium themes and templates."
           {% else %}
             <span class="next">Next &raquo;</span>
           {% endif %}
+    {% endcomment %}
         </div>
-        {% endif %}      
+       {% comment %}   {% endif %} {% endcomment %}     
     </div>-->
 
 </div>    
