@@ -147,7 +147,6 @@ position: relative;
 .featuredcard-columns {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
 }
 
 .featuredcard-columns .card {
