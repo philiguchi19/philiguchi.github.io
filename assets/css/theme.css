@@ -105,6 +105,7 @@ footer.footer {
 .card-img{
 z-index: 1;
 position: relative;
+padding-right: 10px;	
 }
 .card-pin .overlay {
 	opacity:.5;
@@ -114,8 +115,8 @@ position: relative;
 	cursor: zoom-in;
 }
 .card-size{
-        height: 314px;
-	width: 206px;
+        height: ;
+	width: 150px;
 }
 /*featuredcss*/
 .card-post {
