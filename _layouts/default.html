@@ -41,7 +41,7 @@
     <!--A bar for different categories-->
     <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-bottom">
        <!--<div>
-           <ul class="bottomnavbar-nav categories">
+           <ul class="navbar-nav categories">
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
@@ -56,7 +56,7 @@
     </ul>    
        </div>-->
        <div>
-       <ul class="navbar-nav categories">
+       <ul class="bottomnavbar-nav categories">
        <li class="nav-item">{% include menu-categories.html %} </>
        <li class="nav-item">
          <a class="nav-link active" href="{{site.baseurl}}/index.html">Home</a>
