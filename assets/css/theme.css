@@ -104,8 +104,7 @@ footer.footer {
 }
 .card-img{
 z-index: 1;
-position: relative;
-padding-right: 10px;	
+position: relative;	
 }
 .card-pin .overlay {
 	opacity:.5;
