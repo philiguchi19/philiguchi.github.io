@@ -120,19 +120,17 @@ position: relative;
 /*featuredcss*/
 .card-post {
     flex: 0 0 calc(50% - 10px);
+}
+
+@media only screen and (max-width: 600px) {
+  .featuredparent-container {
+    flex-wrap: nowrap;
+}
+  .card-post {
+    flex: 0 0 calc(50% - 10px);
   }
 }
 
-.featuredparent-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 10px;
-    }
-@media (max-width: 600px) {
-  .featuredparent-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .fabi {
     position: absolute;
