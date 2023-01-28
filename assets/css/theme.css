@@ -121,7 +121,13 @@ position: relative;
 .card-post {
     flex: 0 0 calc(50% - 10px);
 }
-
+.bottomnavbar-nav{
+  display: flex;
+  flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 @media only screen and (max-width: 600px) {
   .featuredparent-container {
     flex-wrap: nowrap;
