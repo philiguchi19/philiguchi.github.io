@@ -40,7 +40,7 @@
  </nav>
     <!--A bar for different categories-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-bottom">
-       <div>
+       <!--<div>
            <ul class="navbar-nav categories">
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
@@ -54,6 +54,17 @@
       {% endif %}
     {% assign categories_list = nil %}
     </ul>    
+       </div>-->
+       <div>
+       <ul class="navbar-nav categories">
+       <li class="nav-item">{% include menu-categories.html %} </>
+       <li class="nav-item">
+         <a class="nav-link active" href="{{site.baseurl}}/index.html">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="{{site.baseurl}}/contact.html">Contact</a>
+       </li>
+       
        </div>
     </nav>
         
