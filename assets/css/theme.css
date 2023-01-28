@@ -117,7 +117,16 @@ position: relative;
         height: 314px;
 	width: 206px;
 }
-/*slide css*/
+/*featuredcss*/
+@media only screen and (max-width: 600px) {
+  .featuredparent-container {
+    flex-wrap: nowrap;
+  }
+  .card-post {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
 .featuredparent-container {
     display: flex;
     align-items: flex-start;
