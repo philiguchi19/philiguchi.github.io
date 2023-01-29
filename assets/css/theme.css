@@ -136,7 +136,7 @@ position: relative;
 .bottomnavbar-nav{
   display: flex;
   flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
-  padding-left: 0;
+  padding-left: 10px;
   margin-bottom: 0;
   list-style: none;
 }
