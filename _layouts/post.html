@@ -9,10 +9,13 @@ layout: defaultForPost
     			<article class="card">
                     
                  {% if page.image %} 
-                    <span class="pinme position-absolute top-0 start-0">
+                   <!-- 
+                   <span class="pinme position-absolute top-0 start-0">
                         <a href="https://wa.me/255758951968?text={{ post.title }} - {{ post.url }}">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+                   <i class="fab fa-whatsapp"></i>
+                   </a>
+                   -->
+
                     </span>
                     <img class="card-img-top mb-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}"> 
                 {% endif %}
