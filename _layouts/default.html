@@ -43,8 +43,7 @@
   </div>    
 </nav>
     
-    <!--A bar for different categories-->
-    <nav class="bnavbar navbar-light bg-white fixed-bottom" style="width: 100%;">
+   
        <!--<div>
            <ul class="navbar-nav categories">
 {%comment%}
@@ -62,8 +61,11 @@
 {%endcomment%}
     </ul>    
        </div>-->
-       <div style="width: 100%;">
-       <ul class="bottomnavbar-nav categories" style="width: 100%; display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: space-between;">
+    
+     <!--A bar for different categories-->
+    <nav class="bnavbar navbar-light bg-white fixed-bottom" style="width: 100%;">
+    <div style="width: 100%;">
+      <div class="bottomnavbar-nav categories" style="width: 100%; display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: space-between;">
        <li class="nav-item">
           <a class="bnav-link" href="{{site.baseurl}}/categories.html">
               <div class="bimg-text-container">
@@ -91,9 +93,9 @@
               <!--This line is dangerous, I have to find out-->                                      
              <a class="nav-link" href="{{site.baseurl}}/contact.html"></a>                                          
        </li>
-                                                  
-    </div>
-    </nav>
+     </div>                               
+   </div>
+ </nav>
         
     <div id="lunrsearchresults">
         <ul class="mb-0"></ul>
