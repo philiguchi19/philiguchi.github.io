@@ -40,12 +40,13 @@ layout: defaultForPost
                        Order This <i class="fab fa-whatsapp"></i></a>
                    </p>
                    {% endif %}
-                                      
+                    {%coment%}                  
                    {% for category in page.categories %}
-                      <a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
+                      <!--<a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
                         # {{ category | downcase }}
-                      </a>
+                      </a>-->
                     {% endfor %}
+                    {%endcoment%}
                   <!--
     				{% include comments.html %}
                     -->
