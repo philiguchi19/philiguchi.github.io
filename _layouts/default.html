@@ -45,6 +45,7 @@
     <nav class="bnavbar navbar-light bg-white fixed-bottom" style="width: 100%; padding-left: 10px;">
        <!--<div>
            <ul class="navbar-nav categories">
+{%comment%}
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
@@ -56,6 +57,7 @@
         {% endfor %}
       {% endif %}
     {% assign categories_list = nil %}
+{%endcomment%}
     </ul>    
        </div>-->
        <div style="width: 100%;">
