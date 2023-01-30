@@ -1,38 +1,71 @@
 ---
-title: "Micro laptops Tanzania"
-layout: default
-description: "A great collection of free and premium themes and templates."
-description: "get laptop of your choice."
+layout: defaultForPost
 ---
+<section class="bg-gray200 pt-5 pb-5">    
+    <div class="container">
+    	<div class="row justify-content-center">
+    		<div class="col-md-8">
+                
+    			<article class="card">
+                    
+                 {% if page.image %} 
+                   <!-- 
+                   <span class="pinme position-absolute top-0 start-0">
+                        <a href="https://wa.me/255758951968?text={{ post.title }} - {{ post.url }}">
+                   <i class="fab fa-whatsapp"></i>
+                   </a>
+                   -->
+                    </span>
+                    <img class="card-img-top mb-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}"> 
+                {% endif %}
+                    
+    			<div class="card-body">
+                    
+    				<h1 class="display-4">
+    				    {{page.title}} 
+                    </h1>                    
+                     
+                    <small class="text-muted d-block mb-3">
+                        {% unless page.metadate == "hide" %} 
+                            {{ page.date | date: '%B %d, %Y' }} 
+                        {% endunless %}
+                        {% if page.author %}
+                            , by {{page.author | capitalize}} 
+                        {% endif %}
+                    </small>                    
+                    
+    				{{ content }}
+                    
+                   
+                   {% if page.visit %}
+                   <p><a target="_blank" href="{{page.visit}}" class="btn btn-gray d-block font-weight-bold">
+                       Order This <i class="fab fa-whatsapp"></i></a>
+                   </p>
+                   {% endif %}                 
+                   {% for category in page.categories %}
+                      <!--<a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
+                        # {{ category | downcase }}
+                      </a>-->
+                    {% endfor %}
 
-<section class="mt-4 mb-5">
-
- <!-- homepage banner--> 
-	@@ -17,10 +16,10 @@
-</div>
-<div class="container-fluid">
-
-  
-  <!-- featured section -->
- <div class="featured-title" style="text-align:left;">
-    <h1 style="color:dark; font-size:24px;">featured laptops</h1>
- </div>
-<div class="featuredparent-container" style="display: flex; flex-wrap: wrap;">
-{% for category in site.categories %}
-    {% if category[0] == "featured" %}
-            {% assign pages_list = category[1] %}
-            {% for post in pages_list %}
-              {% if post.title != null %}
-                  <div style="flex: 1 0 0px;">
-                      {% include card-post.html %}
-                  </div>
-              {% endif %}
-            {% endfor %}
-            {% assign pages_list = nil %}
-        {% endif %}
-{% endfor %}
-</div>
-  
-</div>    
- 
+                  <!--
+    				{% include comments.html %}
+                    -->
+    			</div> 
+                                    
+    			</article>
+                
+              
+               <!-- <div class="PageNavigation">
+                  {% if page.next.url %}
+                    <a class="prev" href="{{site.baseurl}}{{page.next.url}}"><i class="fa fa-angle-left"></i> </a>
+                  {% endif %}
+                  {% if page.previous.url %}
+                    <a class="next" href="{{site.baseurl}}{{page.previous.url}}"><i class="fa fa-angle-right"></i></a>
+                  {% endif %}
+                </div>-->
+                
+    		</div>
+    	</div>
+    </div>
 </section>
