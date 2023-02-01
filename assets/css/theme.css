@@ -26,7 +26,8 @@ max-width: 97%;
 border-radius: 0;
 }
 .categorynavbar{
-position: sticky;
+position: fixed;
+z-index: 10;
 bottom:60px;
 }
 blockquote {
