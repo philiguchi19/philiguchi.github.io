@@ -67,7 +67,7 @@
      <!--A bar for different categories-->
      <nav class="categorynavbar navbar-expand-lg navbar-light bg-white">
        <div class="listOfCategories" style="display: flex; flex-direction: row; width:100%">
-           <ul class="navbar-nav categories">
+           <ul class="navbar-nav categories" style="display: flex; flex-direction: row; width:100%">
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
